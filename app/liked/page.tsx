@@ -41,7 +41,7 @@ const Liked = async () => {
                         >
                             <Image
                                 fill
-                                src={"/image/liked.png"}
+                                src={"/images/liked.png"}
                                 alt="Playlist"
                                 className="object-cover"
                             />
