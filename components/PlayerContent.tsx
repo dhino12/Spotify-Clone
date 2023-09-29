@@ -125,7 +125,7 @@ const PlayerContent: React.FC<PlayerContentProps> = ({
                 >
                     <Icon 
                         size={30} 
-                        clasName="text-black"
+                        className="text-black"
                     />
                 </div>
             </div>

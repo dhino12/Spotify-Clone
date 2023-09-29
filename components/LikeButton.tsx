@@ -33,7 +33,7 @@ const LikeButton: React.FC<LikeButtonProps> = ({
                 .from("liked_songs")
                 .select("*")
                 .eq("user_id", user.id)
-                .eq("song_id", songId)
+                .eq("songs_id", songId)
                 .single()
 
             if (!error && data) {
@@ -63,7 +63,7 @@ const LikeButton: React.FC<LikeButtonProps> = ({
             }
         } else {
             const { error } = await supabaseClient
-                .from("liked_song")
+                .from("liked_songs")
                 .insert({
                     song_id: songId,
                     user_id: user.id
