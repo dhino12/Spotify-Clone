@@ -54,7 +54,7 @@ const LikeButton: React.FC<LikeButtonProps> = ({
                 .from("liked_songs")
                 .delete()
                 .eq("user_id", user.id)
-                .eq("song_id", songId)
+                .eq("songs_id", songId)
             
             if (error) {
                 toast.error(error.message)
